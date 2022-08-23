@@ -1,0 +1,78 @@
+.first-page {
+    position: relative;
+}
+.first-page > img {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+    opacity: 0;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+.header-directions {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    justify-content: center;
+}
+.header-directions > li {
+    font-size: 1.8rem;
+}
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: start;
+}
+.hero-text > h1 {
+    font-family: MuseoSlab;
+    font-size: 6rem;
+    font-weight: 300;
+}
+.hero-text > p {
+    margin-top: 1em;
+    font-size: 2.5rem;
+    font-family: TwkLausanne250;
+}
+
+.hero-about {
+    width: 700px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    padding-top: 3em;
+}
+.hero-about--details {
+    background: var(--darkpurple);
+    width: 700px;
+    height: 600px;
+    border-radius: 66px;
+    padding: 6em;
+}
+.hero-about--details > h2 {
+    padding-bottom: 0.5em;
+    font-size: 3rem;
+    font-family: MuseoSlab;
+    width: 100%;
+    color: #b9db62;
+    border-bottom: 3px solid #b9db62;
+}
+.hero-about--details > p {
+    margin-top: 2.5em;
+    font-size: 2rem;
+    line-height: 45px;
+    color: var(--bgcolor);
+}

@@ -1,0 +1,56 @@
+.projects > h2 {
+    font-size: 7rem;
+    font-family: MuseoSlab;
+    font-weight: 300;
+    padding-left: 2em;
+    margin-bottom: 0.5em;
+}
+.projects-container {
+    width: 90%;
+    background: var(--mypurple);
+    height: 75%;
+    margin: 0 auto;
+    border-radius: 56px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 50px;
+}
+
+.swiper-pagination {
+    display: flex;
+    flex-direction: column;
+    top: 35%;
+    left: 20px !important;
+    gap: 20px;
+    max-height: 200px !important;
+    z-index: 6;
+    width: 30px !important;
+}
+.swiper-pagination .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: 1px solid #bcbdfb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bcbdfb;
+    opacity: 1;
+    font-size: 1.3rem;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+    background: #bcbdfb;
+    color: var(--bgcolor);
+}
+.swiper {
+    height: 100%;
+    padding: 3em;
+}
+.swiper-wrapper {
+    z-index: 5;
+}

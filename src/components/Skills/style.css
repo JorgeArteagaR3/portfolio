@@ -1,0 +1,67 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+.skills > h2 {
+    font-size: 8rem;
+    font-family: MuseoSlab;
+    font-weight: 300;
+    padding-left: 2em;
+    padding-top: 0.5em;
+    margin-bottom: 1em;
+}
+.orb {
+    background: var(--mypurple);
+    width: calc(100% / 7);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: unset;
+    gap: 10px;
+    font-size: 1.6rem;
+    border-radius: 50px;
+    float: left;
+    transition: all 0.2s ease-out;
+}
+.orb > svg {
+}
+
+.orb:hover > svg {
+}
+.marquee {
+    height: 200px;
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    transform: rotate(-5deg);
+}
+
+.orb:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.marquee--inner {
+    display: block;
+    width: 200%;
+    margin: 70px 0;
+    position: absolute;
+    animation: marquee 15s linear infinite;
+}
+.marquee--inner:hover {
+    animation-play-state: paused;
+}
+span {
+    float: left;
+    width: 50%;
+}
+@keyframes marquee {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
+}
