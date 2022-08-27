@@ -71,8 +71,8 @@ const Projects = () => {
                     loop
                     pagination={pagination}
                 >
-                    {myprojects.map((project) => (
-                        <SwiperSlide>
+                    {myprojects.map((project, index) => (
+                        <SwiperSlide key={project.title}>
                             <Project
                                 title={project.title}
                                 description={project.description}
@@ -80,6 +80,7 @@ const Projects = () => {
                                 code={project.code}
                                 website={project.website}
                                 technologies={project.technologies}
+                                key={project.title + index}
                             />
                         </SwiperSlide>
                     ))}

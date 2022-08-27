@@ -29,15 +29,17 @@ const Skills = () => {
                                 text={skill.text}
                                 Icon={skill.Icon}
                                 color={skill.color}
+                                key={skill.text}
                             />
                         ))}
                     </span>
                     <span>
-                        {skills.map((skill) => (
+                        {skills.map((skill, index) => (
                             <Orb
                                 text={skill.text}
                                 Icon={skill.Icon}
                                 color={skill.color}
+                                key={index + skill.text}
                             />
                         ))}
                     </span>

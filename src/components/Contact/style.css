@@ -1,13 +1,105 @@
 .contact-container {
-    display: flex;
-
-    align-items: center;
-    flex-direction: column;
-}
-.contact-container > h2 {
-    margin-top: 1em;
-    font-size: 7rem;
-    font-family: MuseoSlab;
+    padding-top: 5em;
 }
 .contact-details {
+    width: 1200px;
+    gap: 20px;
+    height: 500px;
+
+    background: var(--darkpurple);
+    border-radius: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 80%;
+    place-items: center;
+    padding-top: 3em;
+    border: 2px solid rgba(164, 167, 255, 0.12);
+}
+.contact-details > h2 {
+    margin-top: 1em;
+    font-size: 5rem;
+    font-family: MuseoSlab;
+    font-weight: 300;
+    margin-bottom: 1em;
+    color: #b9db62;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.contact-details__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-start;
+    padding-top: 2em;
+}
+.contact-details__container > p {
+    font-size: 2rem;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: var(--bgcolor);
+}
+.contact-social {
+    grid-column: 2/3;
+    grid-row: 2;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.social-icon-container {
+    padding: 1em 2em;
+    border-radius: 28px;
+    border: 2px solid rgba(164, 167, 255, 0.12);
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.social-icon-container:hover {
+    background: var(--bgcolor);
+}
+.social-icon-container:hover > svg {
+    fill: var(--darkpurple);
+}
+.copy-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-tip {
+    color: var(--textcolor);
+    position: absolute;
+    padding: 1em;
+    border-radius: 10px;
+    bottom: 150%;
+    width: 140px;
+    font-size: 1.2rem;
+    text-align: center;
+    background: var(--bgcolor);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+}
+.copy-tip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--bgcolor) transparent transparent transparent;
+}
+.copy-container:hover .copy-tip {
+    visibility: visible;
+    opacity: 1;
+}
+.copy-container:hover .copy-icon {
+    fill: #b9db62;
+    cursor: pointer;
 }
