@@ -1,5 +1,6 @@
 .contact-container {
-    padding-top: 5em;
+    display: flex;
+    align-items: center;
 }
 .contact-details {
     width: 1200px;
@@ -15,6 +16,7 @@
     place-items: center;
     padding-top: 3em;
     border: 2px solid rgba(164, 167, 255, 0.12);
+    margin-bottom: 5em;
 }
 .contact-details > h2 {
     margin-top: 1em;

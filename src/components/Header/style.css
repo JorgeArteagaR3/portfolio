@@ -15,6 +15,9 @@ header {
     margin: 0 auto;
     padding-top: 3em;
     padding-bottom: 2em;
+    position: fixed;
+    background: var(--bgcolor);
+    z-index: 10;
 }
 .header-directions {
     display: flex;
@@ -25,10 +28,17 @@ header {
 .header-directions > li {
     font-size: 1.8rem;
 }
+.header-directions > li > a {
+    text-decoration: none;
+}
+.header-directions > li > a:visited {
+    color: inherit;
+}
 .hero {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 2em;
 }
 .hero-text {
     display: flex;

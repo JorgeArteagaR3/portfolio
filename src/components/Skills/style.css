@@ -1,6 +1,7 @@
 .skills {
     display: flex;
     flex-direction: column;
+    padding-top: 2em;
 }
 .skills > h2 {
     font-size: 8rem;

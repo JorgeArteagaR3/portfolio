@@ -7,8 +7,8 @@ import { Contact } from "./components/Contact/index";
 function App() {
     return (
         <>
-            <Header />
             <div className="app">
+                <Header />
                 <FirstPage />
                 <Skills />
                 <Projects />

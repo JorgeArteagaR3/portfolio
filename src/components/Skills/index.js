@@ -19,7 +19,7 @@ const Skills = () => {
         { text: "Git", Icon: FaGitAlt, color: "#f44d27" },
     ];
     return (
-        <div className="skills effect">
+        <div className="skills effect" id="skills">
             <h2>My Skills</h2>
             <div className="marquee">
                 <div className="marquee--inner">

@@ -3,7 +3,7 @@ import { AboutMe } from "../AboutMe";
 import "./style.css";
 const FirstPage = () => {
     return (
-        <div className="first-page effect">
+        <div className="first-page effect" id="home">
             <div className="hero">
                 <div className="hero-text">
                     <h1>

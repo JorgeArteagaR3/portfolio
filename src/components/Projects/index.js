@@ -57,7 +57,7 @@ const Projects = () => {
     };
 
     return (
-        <div className="projects effect">
+        <div className="projects effect" id="projects">
             <h2>My Projects</h2>
             <div className="projects-container">
                 <Swiper

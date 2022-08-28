@@ -25,7 +25,7 @@ const Contact = () => {
     ];
     const [isCopied, setIsCopied] = useState(false);
     return (
-        <div className="effect contact-container">
+        <div className="effect contact-container" id="contact">
             <div className="contact-details">
                 <h2>Get In Touch</h2>
                 <div className="contact-details__container">
