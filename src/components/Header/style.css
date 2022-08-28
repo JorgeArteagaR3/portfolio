@@ -1,5 +1,8 @@
 .first-page {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .first-page > img {
     position: absolute;
@@ -36,16 +39,16 @@ header {
 }
 .hero {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 2em;
+    gap: 200px;
 }
+
 .hero-text {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     text-align: start;
+    margin-bottom: 10em;
 }
 .hero-text > h1 {
     font-family: MuseoSlab;
@@ -60,10 +63,9 @@ header {
 
 .hero-about {
     width: 700px;
-    height: 700px;
+    height: 500px;
     display: flex;
     align-items: center;
-    padding-top: 3em;
 }
 .hero-about--details {
     background: var(--darkpurple);
