@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
-import { SiJavascript } from "react-icons/si";
 import { DiReact } from "react-icons/di";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { SiBootstrap } from "react-icons/si";
 import { SiCss3 } from "react-icons/si";
 import { DiSass } from "react-icons/di";
+import { IoLogoJavascript } from "react-icons/io5";
 import { FaGitAlt } from "react-icons/fa";
 import { Orb } from "../Orb";
 const Skills = () => {
@@ -14,7 +14,7 @@ const Skills = () => {
         { text: "CSS", Icon: SiCss3, color: "#264de4" },
         { text: "Sass", Icon: DiSass, color: "#cf649a" },
         { text: "Bootstrap", Icon: SiBootstrap, color: "#712cf9" },
-        { text: "Javascript", Icon: SiJavascript, color: "#fcdc00" },
+        { text: "JavaScript", Icon: IoLogoJavascript, color: "#fcdc00" },
         { text: "React", Icon: DiReact, color: "#61dafb" },
         { text: "Git", Icon: FaGitAlt, color: "#f44d27" },
     ];

@@ -33,58 +33,61 @@ header {
 }
 .header-directions > li > a {
     text-decoration: none;
+    text-transform: capitalize;
 }
 .header-directions > li > a:visited {
     color: inherit;
 }
-.hero {
-    display: flex;
-    gap: 200px;
+.menu {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+header > nav {
+    opacity: 1;
+    transition: 0.3s;
 }
 
-.hero-text {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    text-align: start;
-    margin-bottom: 10em;
-}
-.hero-text > h1 {
-    font-family: MuseoSlab;
-    font-size: 6rem;
-    font-weight: 300;
-}
-.hero-text > p {
-    margin-top: 1em;
-    font-size: 2.5rem;
-    font-family: TwkLausanne250;
-}
+@media only screen and (max-width: 1440px) {
+    .first-page {
+        align-items: flex-start;
+        padding-top: 70px;
+    }
 
-.hero-about {
-    width: 700px;
-    height: 500px;
-    display: flex;
-    align-items: center;
+    .header-directions > li {
+        margin-bottom: 1em;
+        font-size: 3.5rem;
+    }
+    .header-directions > li > a {
+        font-size: 1.6rem;
+    }
 }
-.hero-about--details {
-    background: var(--darkpurple);
-    width: 700px;
-    height: 600px;
-    border-radius: 66px;
-    padding: 6em;
+@media only screen and (max-width: 1024px) {
+    .menu {
+        opacity: 1;
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-directions {
+        flex-direction: column;
+        padding-top: 3em;
+        height: 100vh;
+        display: block;
+        padding-left: 2em;
+    }
+    .inactive {
+        opacity: 0;
+    }
+    .dissapear {
+        display: none;
+    }
+    .header-directions > li > a {
+        font-size: 3.5rem;
+    }
 }
-.hero-about--details > h2 {
-    padding-bottom: 0.5em;
-    font-size: 3rem;
-    font-family: MuseoSlab;
-    width: 100%;
-    color: #b9db62;
-    border-bottom: 3px solid #b9db62;
-}
-.hero-about--details > p {
-    margin-top: 2.5em;
-    font-size: 2rem;
-    line-height: 45px;
-    color: var(--bgcolor);
+@media only screen and (max-width: 768px) {
 }

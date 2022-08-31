@@ -13,7 +13,10 @@ const Orb = ({ text, Icon, color }) => {
             className="orb"
         >
             <p className="orb__text">{text}</p>
-            <Icon color={isHover ? color : "var(--textcolor)"} size="8rem" />
+            <Icon
+                className="orb-icon"
+                color={isHover ? color : "var(--textcolor)"}
+            />
         </div>
     );
 };

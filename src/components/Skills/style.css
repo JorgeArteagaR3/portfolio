@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 2em;
+    gap: 180px;
 }
 .skills > h2 {
     font-size: 8rem;
@@ -9,7 +10,6 @@
     font-weight: 300;
     padding-left: 2em;
     padding-top: 0.5em;
-    margin-bottom: 1em;
 }
 .orb {
     background: var(--mypurple);
@@ -26,11 +26,7 @@
     float: left;
     transition: all 0.2s ease-out;
 }
-.orb > svg {
-}
 
-.orb:hover > svg {
-}
 .marquee {
     height: 200px;
     width: 100vw;
@@ -64,5 +60,87 @@ span {
     }
     100% {
         left: -100%;
+    }
+}
+.orb > p {
+    font-size: 2rem;
+}
+.orb > .orb-icon {
+    width: 70px;
+    height: 70px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .skills > h2 {
+        margin-top: 0.8em;
+    }
+
+    .orb > p {
+        font-size: 1.8rem;
+    }
+    .orb > .orb-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .marquee {
+        width: 125vw;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .orb > p {
+        font-size: 1.6rem;
+    }
+    .orb > .orb-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .skills > h2 {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 0.3em;
+        font-size: 7rem;
+    }
+
+    .skills {
+        gap: 140px;
+    }
+}
+@media only screen and (max-width: 690px) {
+    .skills {
+        gap: 100px;
+    }
+    .marquee--inner {
+        animation: marquee 10s linear infinite !important;
+    }
+    .marquee {
+        width: 190vw;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .orb > P {
+        font-size: 1.4rem;
+    }
+    .orb > .orb-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .marquee {
+        width: 240vw;
+    }
+    .marquee--inner {
+        animation: marquee 10s linear infinite !important;
+    }
+}
+@media only screen and (max-width: 440px) {
+    .marquee {
+        width: 300vw;
+    }
+    .orb {
+        gap: 5px;
+        height: 90px;
+    }
+    .marquee--inner {
+        animation: marquee 8s linear infinite !important;
     }
 }
