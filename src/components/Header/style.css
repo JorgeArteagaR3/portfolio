@@ -34,6 +34,7 @@ header {
 .header-directions > li > a {
     text-decoration: none;
     text-transform: capitalize;
+    color: var(--textcolor);
 }
 .header-directions > li > a:visited {
     color: inherit;
