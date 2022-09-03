@@ -57,3 +57,125 @@
 .swiper-wrapper {
     z-index: 5;
 }
+@media only screen and (max-width: 1440px) {
+    header {
+        padding-bottom: 0;
+    }
+    .projects > h2 {
+        margin-top: 0.5em;
+    }
+    .project {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+    .project__details {
+        width: 500px;
+        height: 250px;
+    }
+    .projects-container {
+    }
+}
+@media only screen and (max-width: 1240px) {
+    .project {
+        gap: 50px;
+    }
+    .swiper-pagination {
+        flex-direction: row;
+        top: auto;
+        bottom: 20px !important;
+        left: calc(55% - 100px) !important;
+        width: auto !important;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .projects > h2 {
+        padding-left: 0;
+        text-align: center;
+    }
+    .project__details {
+        width: 400px;
+        height: 230px;
+        padding: 3em 6em;
+        gap: 2em;
+    }
+    .project {
+        grid-template-columns: 50% 50%;
+    }
+    .project__details > * a {
+        padding: 1em 1.5em;
+    }
+    .technologies {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .projects-container {
+        height: 580px;
+    }
+    .project__details > p {
+        font-size: 1.4rem;
+    }
+    .project-detail {
+        gap: 30px;
+    }
+    .project__details {
+        width: 300px;
+        height: 180px;
+        gap: 10px;
+        padding: 3em 4em;
+    }
+    .swiper {
+        padding: 2.5em;
+    }
+    .swiper-pagination {
+        bottom: 10px !important;
+    }
+    .project__details > * a {
+        padding: 0.5em 1em;
+        font-size: 1.4rem;
+    }
+    .project__image-container {
+        height: 400px;
+    }
+    .project-detail > h3 {
+        font-size: 2.5rem;
+    }
+    .project-detail__technologies > h4 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .technologies > svg {
+        width: 50px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .project {
+        flex-direction: column;
+        height: 70%;
+        gap: 20px;
+    }
+    .project__image-container {
+        height: 50%;
+        width: 100%;
+    }
+    .project-detail {
+        height: 50%;
+        gap: 10px;
+    }
+    .swiper {
+        padding: 0;
+    }
+    .projects-container {
+        width: 100%;
+        height: 80%;
+    }
+    .projects > h2 {
+        font-size: 5rem;
+    }
+    .technologies {
+        width: 100%;
+        justify-content: center;
+    }
+}

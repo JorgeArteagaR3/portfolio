@@ -63,7 +63,7 @@ const Projects = () => {
                 <Swiper
                     modules={[Pagination, Mousewheel]}
                     slidesPerView={1}
-                    spaceBetween={30}
+                    spaceBetween={250}
                     mousewheel={true}
                     speed={1000}
                     onSlideChange={() => console.log("slide change")}
