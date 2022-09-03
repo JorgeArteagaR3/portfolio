@@ -198,6 +198,7 @@
         margin-top: 0.5em;
     }
     .project__details {
-        min-width: 350px;
+        min-width: 330px;
+        height: 170px;
     }
 }

@@ -43,7 +43,7 @@ const Projects = () => {
             title: "To Do App",
             image: "https://i.imgur.com/XQVaCKD.jpg",
             description:
-                "ToDo List App is a kind of app that generally used to maintain our day-to-day tasks or list everything that we have to do.",
+                "An app for our day-to-day tasks or list everything that we have to do.",
             code: "https://github.com/JorgeArteagaR3/to-do-app",
             website: "https://to-do-app-orpin-six.vercel.app/",
             technologies: [DiReact, SiCss3],
