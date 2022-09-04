@@ -11,10 +11,10 @@
     overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
-    /* .app {
+    .app {
         scroll-snap-type: unset;
     }
     .effect {
         scroll-snap-align: unset;
-    } */
+    }
 }
