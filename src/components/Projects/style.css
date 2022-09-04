@@ -203,3 +203,11 @@
         height: 170px;
     }
 }
+@media (max-width: 650px) and (max-height: 880px) {
+    .project__image-container > img {
+        width: 230px;
+    }
+    .project__image-container {
+        height: 60%;
+    }
+}
