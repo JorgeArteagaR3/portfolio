@@ -154,7 +154,7 @@
     .project {
         flex-direction: column;
         height: 70%;
-        gap: 30px;
+        gap: 40px;
     }
     .project__image-container {
         height: 70%;
@@ -170,7 +170,7 @@
     }
     .projects-container {
         width: 100%;
-        height: 80%;
+        height: 85%;
     }
     .projects > h2 {
         font-size: 4rem;
@@ -186,9 +186,10 @@
         font-size: 1.6rem;
     }
     .project__image-container > img {
-        border-radius: 56px 56px 0 0;
+        border-radius: 0;
         box-shadow: none;
-        object-fit: fill;
+        margin-top: 6.5em;
+        width: 250px;
     }
     .technologies > svg {
         width: 40px;
