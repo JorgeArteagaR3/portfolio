@@ -173,7 +173,7 @@
         height: 85%;
     }
     .projects > h2 {
-        font-size: 4rem;
+        font-size: 5rem;
     }
     .technologies {
         width: 100%;
@@ -212,5 +212,31 @@
     }
     .project__image-container {
         height: 60%;
+    }
+}
+@media only screen and (min-device-width: 900px) and (max-device-width: 1600px) {
+    
+    .project__image-container{
+        width: 350px;
+        height: 450px;
+    }
+    .project__image-container {
+        align-self: flex-start;
+    }
+    .project-detail{
+     gap: 20px;
+    }
+    .project__details{
+        height: 270px;
+        width: 540px;
+    }
+    .skills > h2{
+        font-size: 6rem;
+    }
+}
+
+@media(hover:hover){
+    .project__image-container:hover > img {
+        transform: scale(1.1);
     }
 }
