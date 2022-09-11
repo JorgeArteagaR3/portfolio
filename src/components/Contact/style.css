@@ -153,4 +153,7 @@
     .contact-details__container {
         padding-left: 2em;
     }
+    .contact-details > h2 {
+        font-size: 3.5rem;
+    }
 }
