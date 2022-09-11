@@ -175,12 +175,15 @@
     .projects > h2 {
         font-size: 5rem;
     }
+
     .technologies {
         width: 100%;
         justify-content: center;
     }
     .project-detail > h3 {
         font-size: 2rem;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
     }
     .project-detail__technologies > h4 {
         font-size: 1.6rem;
@@ -215,27 +218,26 @@
     }
 }
 @media only screen and (min-device-width: 900px) and (max-device-width: 1600px) {
-    
-    .project__image-container{
+    .project__image-container {
         width: 350px;
         height: 450px;
     }
     .project__image-container {
         align-self: flex-start;
     }
-    .project-detail{
-     gap: 20px;
+    .project-detail {
+        gap: 20px;
     }
-    .project__details{
+    .project__details {
         height: 270px;
         width: 540px;
     }
-    .skills > h2{
+    .skills > h2 {
         font-size: 6rem;
     }
 }
 
-@media(hover:hover){
+@media (hover: hover) {
     .project__image-container:hover > img {
         transform: scale(1.1);
     }
