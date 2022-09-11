@@ -4,6 +4,7 @@ import {
     FaLinkedinIn,
     FaWhatsapp,
     FaRegCopy,
+    FaUserAlt,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
@@ -29,7 +30,10 @@ const Contact = () => {
             <div className="contact-details">
                 <h2>Get In Touch</h2>
                 <div className="contact-details__container">
-                    <p>Jorge Luis Arteaga Aranibar</p>
+                    <p>
+                        <FaUserAlt />
+                        Jorge Luis Arteaga Aranibar
+                    </p>
                     <p>
                         <FaPhoneAlt />
                         +51 912893054
