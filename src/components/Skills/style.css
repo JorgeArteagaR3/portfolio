@@ -13,7 +13,7 @@
 }
 .orb {
     background: var(--mypurple);
-    width: calc(100% / 7);
+    width: calc(100% / 8);
     padding-top: 1em;
     padding-bottom: 1em;
     display: flex;
@@ -214,5 +214,9 @@ span {
     .skills > h2{
         font-size: 6rem;
         margin-top: 0.5em;
+    }
+    .orb > .orb-icon {
+        width: 45px;
+        height: 45px;
     }
 }

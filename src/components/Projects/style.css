@@ -27,7 +27,7 @@
 .swiper-pagination {
     display: flex;
     flex-direction: column;
-    top: 35%;
+    top: 30%;
     left: 20px !important;
     gap: 20px;
     max-height: 200px !important;
