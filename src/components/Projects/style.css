@@ -85,7 +85,7 @@
         flex-direction: row;
         top: auto;
         bottom: 20px !important;
-        left: calc(55% - 100px) !important;
+        left: calc(50% - 150px) !important;
         width: auto !important;
     }
 }
