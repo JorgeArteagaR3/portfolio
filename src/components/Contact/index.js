@@ -43,7 +43,7 @@ const Contact = () => {
                     </p>
                     <p>
                         <MdEmail />
-                        jorgearteagaaranibar@gmail.com
+                        jorge.aranibar26@gmail.com
                         <div
                             className="copy-container"
                             onClick={() => {
