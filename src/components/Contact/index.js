@@ -26,7 +26,10 @@ const Contact = () => {
     ];
     const [isCopied, setIsCopied] = useState(false);
     return (
-        <div className="effect contact-container" id="contact">
+        <div
+            className="effect contact-container"
+            id="contact"
+        >
             <div className="contact-details">
                 <h2>Get In Touch</h2>
                 <div className="contact-details__container">
@@ -45,7 +48,7 @@ const Contact = () => {
                             className="copy-container"
                             onClick={() => {
                                 navigator.clipboard.writeText(
-                                    "jorgearteagaaranibar@gmail.com"
+                                    "jorge.aranibar26@gmail.com"
                                 );
                                 setIsCopied(true);
                             }}
